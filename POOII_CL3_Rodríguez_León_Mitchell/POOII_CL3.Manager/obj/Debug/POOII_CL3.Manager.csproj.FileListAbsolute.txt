@@ -1,0 +1,13 @@
+C:\Users\Mitchell\Desktop\POOII_CL3\POOII_CL3_Rodríguez_León_Mitchell\POOII_CL3.Manager\bin\Debug\POOII_CL3.Manager.dll
+C:\Users\Mitchell\Desktop\POOII_CL3\POOII_CL3_Rodríguez_León_Mitchell\POOII_CL3.Manager\bin\Debug\POOII_CL3.Manager.pdb
+C:\Users\Mitchell\Desktop\POOII_CL3\POOII_CL3_Rodríguez_León_Mitchell\POOII_CL3.Manager\bin\Debug\POOII_CL3.Dominio.dll
+C:\Users\Mitchell\Desktop\POOII_CL3\POOII_CL3_Rodríguez_León_Mitchell\POOII_CL3.Manager\bin\Debug\POOII_CL3.Entidades.dll
+C:\Users\Mitchell\Desktop\POOII_CL3\POOII_CL3_Rodríguez_León_Mitchell\POOII_CL3.Manager\bin\Debug\POOII_CL3.ADOSqlServer.dll
+C:\Users\Mitchell\Desktop\POOII_CL3\POOII_CL3_Rodríguez_León_Mitchell\POOII_CL3.Manager\bin\Debug\POOII_CL3.Dominio.pdb
+C:\Users\Mitchell\Desktop\POOII_CL3\POOII_CL3_Rodríguez_León_Mitchell\POOII_CL3.Manager\bin\Debug\POOII_CL3.Entidades.pdb
+C:\Users\Mitchell\Desktop\POOII_CL3\POOII_CL3_Rodríguez_León_Mitchell\POOII_CL3.Manager\bin\Debug\POOII_CL3.ADOSqlServer.pdb
+C:\Users\Mitchell\Desktop\POOII_CL3\POOII_CL3_Rodríguez_León_Mitchell\POOII_CL3.Manager\obj\Debug\POOII_CL3.Manager.csprojAssemblyReference.cache
+C:\Users\Mitchell\Desktop\POOII_CL3\POOII_CL3_Rodríguez_León_Mitchell\POOII_CL3.Manager\obj\Debug\POOII_CL3.Manager.csproj.CoreCompileInputs.cache
+C:\Users\Mitchell\Desktop\POOII_CL3\POOII_CL3_Rodríguez_León_Mitchell\POOII_CL3.Manager\obj\Debug\POOII_CL3.Manager.csproj.CopyComplete
+C:\Users\Mitchell\Desktop\POOII_CL3\POOII_CL3_Rodríguez_León_Mitchell\POOII_CL3.Manager\obj\Debug\POOII_CL3.Manager.dll
+C:\Users\Mitchell\Desktop\POOII_CL3\POOII_CL3_Rodríguez_León_Mitchell\POOII_CL3.Manager\obj\Debug\POOII_CL3.Manager.pdb

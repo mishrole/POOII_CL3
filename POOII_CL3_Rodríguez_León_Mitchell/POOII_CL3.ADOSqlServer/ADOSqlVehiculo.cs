@@ -35,10 +35,10 @@ namespace POOII_CL3.ADOSqlServer
                         IdMarca = dr.GetInt32(4),
                         Marca = dr.GetString(5)
                     });
-
-                    dr.Close();
-                    cn.Close();
                 }
+
+                dr.Close();
+                cn.Close();
             }
             catch (Exception)
             {
