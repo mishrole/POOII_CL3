@@ -14,5 +14,10 @@ namespace POOII_CL3.Manager
         {
             return new DomVehiculo().Listar();
         }
+
+        public int Insertar(Vehiculo objeto)
+        {
+            return new DomVehiculo().Insertar(objeto);
+        }
     }
 }

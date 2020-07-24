@@ -2,6 +2,7 @@
 using POOII_CL3.Entidades;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -47,5 +48,36 @@ namespace POOII_CL3.ADOSqlServer
 
             return lista;
         }
+    
+        public int Insertar(Vehiculo objeto)
+        {
+            int resultado = -1;
+            SqlConnection cn = new ConexionSQL().ObtenerConexion();
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SP_VEHICULOS_REGISTRAR", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Placa", objeto.Placa);
+                cmd.Parameters.AddWithValue("@Año", objeto.Año);
+                cmd.Parameters.AddWithValue("@Modelo", objeto.Modelo);
+                cmd.Parameters.AddWithValue("@IdMarca", objeto.IdMarca);
+
+                cn.Open();
+                resultado = cmd.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+
+            return resultado;
+        }
+
+    
     }
 }

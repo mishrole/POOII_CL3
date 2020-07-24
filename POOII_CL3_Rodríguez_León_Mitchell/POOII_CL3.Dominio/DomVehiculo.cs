@@ -15,5 +15,10 @@ namespace POOII_CL3.Dominio
         {
             return new ADOSqlVehiculo().Listar();
         }
+
+        public int Insertar(Vehiculo objeto)
+        {
+            return new ADOSqlVehiculo().Insertar(objeto);
+        }
     }
 }

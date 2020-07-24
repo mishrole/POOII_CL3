@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace POOII_CL3.ADOSqlServer
 {
@@ -19,7 +20,7 @@ namespace POOII_CL3.ADOSqlServer
             {
                 SqlConnection cn = new ConexionSQL().ObtenerConexion();
                 SqlCommand cmd = new SqlCommand("SP_MARCAS_LISTAR", cn);
-                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.CommandType = CommandType.StoredProcedure;
 
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
@@ -28,8 +29,8 @@ namespace POOII_CL3.ADOSqlServer
                 {
                     lista.Add(new Marca()
                     {
-                        IdMarca = dr.GetInt32(1),
-                        Nombre = dr.GetString(2)
+                        IdMarca = dr.GetInt32(0),
+                        Nombre = dr.GetString(1)
                     });
                 }
 
