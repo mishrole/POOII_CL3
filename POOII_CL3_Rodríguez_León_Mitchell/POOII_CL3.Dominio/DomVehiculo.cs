@@ -31,5 +31,10 @@ namespace POOII_CL3.Dominio
             return new ADOSqlVehiculo().Actualizar(objeto);
         }
 
+        public int Eliminar(int id)
+        {
+            return new ADOSqlVehiculo().Eliminar(id);
+        }
+
     }
 }

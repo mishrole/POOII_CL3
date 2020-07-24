@@ -146,5 +146,31 @@ namespace POOII_CL3.ADOSqlServer
             return resultado;
         }
 
+        public int Eliminar(int id)
+        {
+            int resultado = -1;
+            SqlConnection cn = new ConexionSQL().ObtenerConexion();
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SP_VEHICULOS_ELIMINAR", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@IdVehiculo", id);
+
+                cn.Open();
+                resultado = cmd.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+
+            return resultado;
+        }
+
     }
 }

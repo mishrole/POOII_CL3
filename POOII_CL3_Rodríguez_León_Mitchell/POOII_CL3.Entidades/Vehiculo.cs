@@ -18,7 +18,7 @@ namespace POOII_CL3.Entidades
         public string Placa { get; set; }
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "Ingrese el año")]
-        [RegularExpression("\\d{4}", ErrorMessage = "El año debe ")]
+        [RegularExpression("\\d{4}", ErrorMessage = "El año debe contener 4 dígitos")]
         public int Año { get; set; }
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "Ingrese un modelo")]

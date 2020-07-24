@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<POOII_CL3.Entidades.Vehiculo>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Lista de Vehículos";
 }
 
-<h2>Index</h2>
+<h2>Lista de Vehículos</h2>
 
 <p>
     @Html.ActionLink("Nuevo", "RegistrarVehiculo")
@@ -43,7 +43,7 @@
         <td>
             @Html.ActionLink("Editar", "ActualizarVehiculo", new { id = item.IdVehiculo }) |
             @Html.ActionLink("Ver", "VerVehiculo", new { id = item.IdVehiculo }) |
-            @Html.ActionLink("Eliminar", "Delete", new { id = item.IdVehiculo })
+            @Html.ActionLink("Eliminar", "EliminarVehiculo", new { id = item.IdVehiculo })
         </td>
     </tr>
 }

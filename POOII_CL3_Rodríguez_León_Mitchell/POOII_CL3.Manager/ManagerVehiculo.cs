@@ -29,5 +29,10 @@ namespace POOII_CL3.Manager
         {
             return new DomVehiculo().Actualizar(objeto);
         }
+
+        public int Eliminar(int id)
+        {
+            return new DomVehiculo().Eliminar(id);
+        }
     }
 }

@@ -1,31 +1,96 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Inicio";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h2>Programación Orientada a Objetos II</h2>
+        <p class="lead">Tercera Evaluación de Laboratorio</p>
+        <p><a href="https://github.com/mishrole/POOII_CL3/raw/master/1895_AC_PROGRAMACION%20ORIENTADA%20A%20OBJETOS%20II_NOCHE_T4GN_01_CL_3_APELLIDOS%20NOMBRES.pdf" class="btn btn-dark btn-md">Descargar Evaluación</a></p>
+    </div>
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
+    <div class="col-sm-12">
+        <h4>Contexto del Proyecto</h4>
+        <hr />
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            Una empresa de transportes ha decidido llevar el control de todos sus procesos a una aplicación web,
+            con el objetivo de facilitar la información a todas las áreas de la empresa.
+            
+            Debemos implementar una aplicación web con la <b>Arquitectura N-Capas del Dominio</b> que
+            permita realizar el mantenimiento de los registros de vehículos en la base de datos <b>“BD_CL3”</b>.
         </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    <div class="col-sm-12">
+        <h4>Consideraciones Generales</h4>
+        <hr />
+        <ul>
+            <li class="form-group">
+                Agregar la estructura de la Arquitectura N-Capas del Dominio, e implementar todo
+                el proceso de mantenimiento de la tabla solicitada
+            </li>
+            <li class="form-group">Use el patrón MVC en Visual C#</li>
+            <li class="form-group">Implemente las vistas necesarias para la aplicación</li>
+            <li class="form-group">Agregue las imágenes necesarias para la aplicación</li>
+            <li class="form-group">
+                Implemente el archivo estilos.css, y defina los formatos adecuados en la
+                presentación de las diferentes ventanas de la aplicación.
+            </li>
+            <li class="form-group">Implemente una Template en la que se incluya: menu, banner y footer</li>
+            <li class="form-group">
+                Implemente los procedimientos almacenados necesarios para el mantenimiento y reporte
+            </li>
+            <li class="form-group">
+                Diseñe un informe de ReportViewer que muestre la lista de proveedores
+            </li>
+            <li class="form-group">
+                Implemente en un controlador llamado ReporteController y defina los métodos para
+                realizar el reporte de vehículos
+            </li>
+        </ul>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    <div class="col-sm-12">
+        <h4>Parte 1</h4>
+        <hr />
+        <p>Mantenimiento de Registros con Arquitectura N-Capas DDD.</p>
+        <ul>
+            <li class="form-check">
+                <input type="checkbox" class="form-check-input" disabled checked>
+                <label class="form-check-label">Listado de vehículos</label>
+            </li>
+            <li class="form-check">
+                <input type="checkbox" class="form-check-input" disabled>
+                <label class="form-check-label">Consulta de vehículos por una determinada Marca (tabla Marca)</label>
+            </li>
+            <li class="form-check">
+                <input type="checkbox" class="form-check-input" disabled checked>
+                <label class="form-check-label">Registro del nuevo vehículo</label>
+            </li>
+            <li class="form-check">
+                <input type="checkbox" class="form-check-input" disabled checked>
+                <label class="form-check-label">Actualiza datos del vehículo</label>
+            </li>
+            <li class="form-check">
+                <input type="checkbox" class="form-check-input" disabled checked>
+                <label class="form-check-label">Muestra el detalle del vehículo</label>
+            </li>
+        </ul>
+    </div>
+    <div class="col-sm-12">
+        <h4>Parte 2</h4>
+        <hr />
+        <p>Reporte General de Vehículos</p>
+        <ul>
+            <li class="form-check">
+                <input type="checkbox" class="form-check-input" disabled>
+                <label class="form-check-label">Diseño de informe de ReportViewer para Proveedores</label>
+            </li>
+            <li class="form-check">
+                <input type="checkbox" class="form-check-input" disabled>
+                <label class="form-check-label">Controlador ReporteController con los métodos del reporte</label>
+            </li>
+        </ul>
     </div>
 </div>

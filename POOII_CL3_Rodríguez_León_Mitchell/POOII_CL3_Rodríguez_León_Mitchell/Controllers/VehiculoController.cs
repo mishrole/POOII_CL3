@@ -63,5 +63,18 @@ namespace POOII_CL3_Rodríguez_León_Mitchell.Controllers
         {
             return View(mgrVehiculo.Obtener(id));
         }
+
+        public ActionResult EliminarVehiculo(int id)
+        {
+            Vehiculo objeto = mgrVehiculo.Obtener(id);
+            return View(objeto);
+        }
+
+        [HttpPost]
+        public ActionResult EliminarVehiculo(Vehiculo objeto)
+        {
+            mgrVehiculo.Eliminar(objeto.IdVehiculo);
+            return RedirectToAction("Index");
+        }
     }
 }
