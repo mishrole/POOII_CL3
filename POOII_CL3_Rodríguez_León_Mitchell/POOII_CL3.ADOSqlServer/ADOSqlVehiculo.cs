@@ -78,6 +78,73 @@ namespace POOII_CL3.ADOSqlServer
             return resultado;
         }
 
-    
+        public Vehiculo Obtener(int id)
+        {
+            Vehiculo objeto = new Vehiculo();
+
+            try
+            {
+                SqlConnection cn = new ConexionSQL().ObtenerConexion();
+                SqlCommand cmd = new SqlCommand("SP_VEHICULOS_OBTENER", cn);
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@IdVehiculo", id);
+
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    objeto = new Vehiculo()
+                    {
+                        IdVehiculo = dr.GetInt32(0),
+                        Placa = dr.GetString(1),
+                        Año = dr.GetInt32(2),
+                        Modelo = dr.GetString(3),
+                        IdMarca = dr.GetInt32(4),
+                        Marca = dr.GetString(5)
+                    };
+                }
+
+                dr.Close();
+                cn.Close();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+            return objeto;
+        }
+
+        public int Actualizar(Vehiculo objeto)
+        {
+            int resultado = -1;
+            SqlConnection cn = new ConexionSQL().ObtenerConexion();
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SP_VEHICULOS_ACTUALIZAR", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Placa", objeto.Placa);
+                cmd.Parameters.AddWithValue("@Año", objeto.Año);
+                cmd.Parameters.AddWithValue("@Modelo", objeto.Modelo);
+                cmd.Parameters.AddWithValue("@IdMarca", objeto.IdMarca);
+                cmd.Parameters.AddWithValue("@IdVehiculo", objeto.IdVehiculo);
+
+                cn.Open();
+                resultado = cmd.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+
+            return resultado;
+        }
+
     }
 }

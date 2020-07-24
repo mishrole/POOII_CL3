@@ -37,5 +37,31 @@ namespace POOII_CL3_Rodríguez_León_Mitchell.Controllers
                 return RedirectToAction("Index");
             }
         }
+
+        public ActionResult ActualizarVehiculo(int id)
+        {
+            Vehiculo objeto = mgrVehiculo.Obtener(id);
+            ViewBag.marcas = mgrMarca.Listar();
+            return View(objeto);
+        }
+
+        [HttpPost]
+        public ActionResult ActualizarVehiculo(Vehiculo objeto)
+        {
+            if(!ModelState.IsValid)
+            {
+                ViewBag.marcas = mgrMarca.Listar();
+                return View(objeto);
+            }else
+            {
+                mgrVehiculo.Actualizar(objeto);
+                return RedirectToAction("Index");
+            }
+        }
+
+        public ActionResult VerVehiculo(int id)
+        {
+            return View(mgrVehiculo.Obtener(id));
+        }
     }
 }

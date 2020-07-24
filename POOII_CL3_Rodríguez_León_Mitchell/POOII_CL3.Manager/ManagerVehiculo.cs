@@ -19,5 +19,15 @@ namespace POOII_CL3.Manager
         {
             return new DomVehiculo().Insertar(objeto);
         }
+
+        public Vehiculo Obtener(int id)
+        {
+            return new DomVehiculo().Obtener(id);
+        }
+
+        public int Actualizar(Vehiculo objeto)
+        {
+            return new DomVehiculo().Actualizar(objeto);
+        }
     }
 }
