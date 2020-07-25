@@ -36,5 +36,10 @@ namespace POOII_CL3.Dominio
             return new ADOSqlVehiculo().Eliminar(id);
         }
 
+        public List<Vehiculo> ListarVehiculoXMarca(int id)
+        {
+            return new ADOSqlVehiculo().ListarVehiculoXMarca(id);
+        }
+
     }
 }

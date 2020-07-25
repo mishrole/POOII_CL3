@@ -30,5 +30,7 @@ namespace POOII_CL3_Rodríguez_León_Mitchell.Models
         public virtual DbSet<TipoDocumento> TipoDocumento { get; set; }
         public virtual DbSet<Vehiculo> Vehiculo { get; set; }
         public virtual DbSet<Viaje> Viaje { get; set; }
+
+        public System.Data.Entity.DbSet<POOII_CL3.Entidades.Vehiculo> Vehiculoes { get; set; }
     }
 }

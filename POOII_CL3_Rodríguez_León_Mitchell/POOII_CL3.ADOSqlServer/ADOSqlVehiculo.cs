@@ -172,5 +172,44 @@ namespace POOII_CL3.ADOSqlServer
             return resultado;
         }
 
+        public List<Vehiculo> ListarVehiculoXMarca(int id)
+        {
+            List<Vehiculo> resultado = new List<Vehiculo>();
+            SqlConnection cn = new ConexionSQL().ObtenerConexion();
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SP_VEHICULOS_X_MARCA", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@IdMarca", id);
+
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    Vehiculo objeto = new Vehiculo();
+                    objeto.IdVehiculo = dr.GetInt32(0);
+                    objeto.Placa = dr.GetString(1);
+                    objeto.Año = dr.GetInt32(2);
+                    objeto.Modelo = dr.GetString(3);
+                    objeto.IdMarca = dr.GetInt32(4);
+                    objeto.Marca = dr.GetString(5);
+                    resultado.Add(objeto);
+                }
+                dr.Close();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+
+                cn.Close();
+            }
+
+            return resultado;
+        }
+
     }
 }

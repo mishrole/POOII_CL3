@@ -76,5 +76,14 @@ namespace POOII_CL3_Rodríguez_León_Mitchell.Controllers
             mgrVehiculo.Eliminar(objeto.IdVehiculo);
             return RedirectToAction("Index");
         }
+
+        public ActionResult ListarVehiculoXMarca(int id = 0)
+        {
+            ViewBag.marca = mgrMarca.Listar();
+            List<Vehiculo> lista = new List<Vehiculo>();
+            lista = mgrVehiculo.ListarVehiculoXMarca(id);
+
+            return View(lista);
+        }
     }
 }

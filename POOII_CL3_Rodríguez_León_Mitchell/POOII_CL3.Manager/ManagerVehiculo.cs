@@ -34,5 +34,10 @@ namespace POOII_CL3.Manager
         {
             return new DomVehiculo().Eliminar(id);
         }
+
+        public List<Vehiculo> ListarVehiculoXMarca(int id)
+        {
+            return new DomVehiculo().ListarVehiculoXMarca(id);
+        }
     }
 }

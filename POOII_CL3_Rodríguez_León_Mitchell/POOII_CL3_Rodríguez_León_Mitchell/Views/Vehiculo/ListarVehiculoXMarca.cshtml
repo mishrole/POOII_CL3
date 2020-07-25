@@ -1,0 +1,68 @@
+﻿@model IEnumerable<POOII_CL3.Entidades.Vehiculo>
+
+@{
+    ViewBag.Title = "Consulta de Vehículos";
+}
+
+<h2>Consulta de Vehículos</h2>
+
+<p>
+    @using (Html.BeginForm())
+    {
+        <table>
+            <tr>
+                <th class="margin-mrml">
+                    Selecione Una Marca:
+                </th>
+                <th>
+                    @Html.DropDownList("id", new SelectList(ViewBag.marca, "IdMarca", "Nombre"), "Selecione... ", new { @class = "form-control" })
+                </th>
+                <th>
+                    <button class="btn btn-primary margin-mrml"> Buscar</button>
+                </th>
+            </tr>
+        </table>
+    }
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdVehiculo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Placa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Año)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Modelo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Marca)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdVehiculo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Placa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Año)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Modelo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Marca)
+        </td>
+    </tr>
+    }
+
+</table>
