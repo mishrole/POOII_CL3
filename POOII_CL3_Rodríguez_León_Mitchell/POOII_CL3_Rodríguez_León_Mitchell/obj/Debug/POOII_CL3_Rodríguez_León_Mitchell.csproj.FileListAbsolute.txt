@@ -156,3 +156,7 @@ C:\Users\Mitchell\Desktop\POOII_CL3\POOII_CL3_Rodríguez_León_Mitchell\POOII_CL
 C:\Users\Mitchell\Desktop\POOII_CL3\POOII_CL3_Rodríguez_León_Mitchell\POOII_CL3_Rodríguez_León_Mitchell\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Mitchell\Desktop\POOII_CL3\POOII_CL3_Rodríguez_León_Mitchell\POOII_CL3_Rodríguez_León_Mitchell\obj\Debug\RdlCompile.cache
 C:\Users\Mitchell\Desktop\POOII_CL3\POOII_CL3_Rodríguez_León_Mitchell\POOII_CL3_Rodríguez_León_Mitchell\obj\Debug\RdlCompile.compiled
+C:\Users\Mitchell\Desktop\POOII_CL3\POOII_CL3_Rodríguez_León_Mitchell\POOII_CL3_Rodríguez_León_Mitchell\bin\EntityFramework.dll
+C:\Users\Mitchell\Desktop\POOII_CL3\POOII_CL3_Rodríguez_León_Mitchell\POOII_CL3_Rodríguez_León_Mitchell\bin\EntityFramework.SqlServer.dll
+C:\Users\Mitchell\Desktop\POOII_CL3\POOII_CL3_Rodríguez_León_Mitchell\POOII_CL3_Rodríguez_León_Mitchell\bin\EntityFramework.xml
+C:\Users\Mitchell\Desktop\POOII_CL3\POOII_CL3_Rodríguez_León_Mitchell\POOII_CL3_Rodríguez_León_Mitchell\bin\EntityFramework.SqlServer.xml

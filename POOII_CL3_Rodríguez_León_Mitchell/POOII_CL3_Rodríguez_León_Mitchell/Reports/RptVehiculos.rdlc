@@ -397,7 +397,7 @@
         <Top>0.65828cm</Top>
         <Left>1.00224cm</Left>
         <Height>1.2cm</Height>
-        <Width>14.3415cm</Width>
+        <Width>14.34151cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -483,7 +483,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>=Globals!PageNumber + "/" + Globals!TotalPages</Value>
+                  <Value>=Globals!PageNumber &amp; "/" &amp; Globals!TotalPages</Value>
                   <Style />
                 </TextRun>
               </TextRuns>

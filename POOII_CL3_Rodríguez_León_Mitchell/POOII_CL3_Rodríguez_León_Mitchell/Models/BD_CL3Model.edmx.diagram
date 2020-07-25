@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2d3e981e66b14fe49788ca5915dd2a47" Name="Diagram1">
+        <EntityTypeShape EntityType="BD_CL3Model.Conductor" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_CL3Model.Marca" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_CL3Model.TipoDocumento" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_CL3Model.Vehiculo" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_CL3Model.Viaje" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <AssociationConnector Association="BD_CL3Model.FK_Conductor_TipoDocumento" ManuallyRouted="false" />
+        <AssociationConnector Association="BD_CL3Model.FK_Viaje_Conductor" ManuallyRouted="false" />
+        <AssociationConnector Association="BD_CL3Model.FK_Vehiculo_Marca" ManuallyRouted="false" />
+        <AssociationConnector Association="BD_CL3Model.FK_Viaje_Vehiculo" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

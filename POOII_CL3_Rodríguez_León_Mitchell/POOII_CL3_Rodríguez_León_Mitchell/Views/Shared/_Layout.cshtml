@@ -25,6 +25,9 @@
                 <li class="nav-item @(ViewContext.RouteData.Values["Action"].ToString() == "RegistrarVehiculo" && ViewContext.RouteData.Values["Controller"].ToString() == "Vehiculo" ? "active" : "")">
                     @Html.ActionLink("Nuevo", "RegistrarVehiculo", "Vehiculo", null, new { @class = "nav-link" })
                 </li>
+                <li class="nav-item @(ViewContext.RouteData.Values["Action"].ToString() == "ReporteVehiculos" && ViewContext.RouteData.Values["Controller"].ToString() == "Reportes" ? "active" : "")">
+                    @Html.ActionLink("Reporte", "ReporteVehiculos", "Reportes", null, new { @class = "nav-link" })
+                </li>
             </ul>
         </div>
     </nav>
