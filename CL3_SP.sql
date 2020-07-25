@@ -20,7 +20,6 @@ AS
 GO
 
 -- Registro de nuevo Vehículo
-
 CREATE PROCEDURE SP_VEHICULOS_REGISTRAR
 @Placa varchar(20),
 @Año int,
@@ -32,7 +31,6 @@ AS
 GO
 
 -- Actualización de registro de Vehículo
-
 CREATE PROCEDURE SP_VEHICULOS_ACTUALIZAR
 @Placa varchar(20),
 @Año int,
@@ -46,7 +44,6 @@ AS
 GO
 
 -- Detalle de Vehículo
-
 CREATE PROCEDURE SP_VEHICULOS_OBTENER
 @IdVehiculo int
 AS
@@ -61,9 +58,24 @@ AS
 GO
 
 -- Eliminación de registro de Vehículo
-
 CREATE PROCEDURE SP_VEHICULOS_ELIMINAR
 @IdVehiculo int
 AS
 	DELETE FROM dbo.Vehiculo WHERE IdVehiculo = @IdVehiculo
 GO
+
+-- Listar Vehículos por Marca
+CREATE PROCEDURE SP_VEHICULOS_X_MARCA
+@IdMarca int
+As
+	SELECT
+	V.IdVehiculo,
+	V.Placa,
+	V.Año,
+	V.Modelo,
+	V.IdMarca,
+	M.Nombre
+	FROM dbo.Vehiculo AS V INNER JOIN dbo.Marca AS M
+	ON V.IdMarca = M.IdMarca
+	WHERE V.IdMarca = @IdMarca
+Go
